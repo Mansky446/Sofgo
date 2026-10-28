@@ -1,0 +1,10 @@
+{
+  "modules": {
+    "https://jsr.io/@std/crypto/0.221.0/_wasm/lib/deno_std_wasm_crypto.generated.d.mts": {},
+    "https://jsr.io/@std/emcoding/meta.json": {
+      "headers": {
+        "x-deno-not-found": "404"
+      }
+    }
+  }
+}

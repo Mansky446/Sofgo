@@ -1,0 +1,25 @@
+{
+    "name": "@mansky446/sofser",
+    "version": "1.0.0",
+    "vendor": true,
+    "exports": {
+        ".": "./mod.ts"
+    },
+    "imports": {
+        "@db/mysql": "jsr:@db/mysql@^3.0.0-rc.1",
+        "@std/encoding": "jsr:@std/encoding@^1.0.11"
+    },
+    "permissions": {
+        "default": {
+            "env": true,
+            "net": true,
+            "read": ["cache"],
+            "write": ["cache"]
+        }
+    },
+    "tasks": {
+        "run": "deno run -P --env-file --cached-only src/main.ts",
+        "migrate": "deno run -P --env-file --cached-only src/migrate.ts",
+        "reroute": "deno run -A --cached-only src/reroute.ts"
+    }
+}
